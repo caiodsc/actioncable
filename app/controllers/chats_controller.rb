@@ -1,5 +1,5 @@
 class ChatsController < ApplicationController
   def show
-    @messages = Messages.all
+    @messages = Message.all
   end
 end
