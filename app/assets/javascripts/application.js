@@ -13,4 +13,19 @@
 //= require rails-ujs
 //= require jquery
 //= require turbolinks
+//= require jt_address
 //= require_tree .
+
+// This function is call when Google Maps is loaded
+window.googleMapInitialize = function(){
+
+    // Simple usage
+    $('.jt-address-autocomplete').jt_address();
+
+    // Advanced usage with google options
+    $('.jt-address-autocomplete').jt_address({
+        type: ['restaurant'],
+        componentRestrictions: { country: 'fr' }
+    });
+
+};

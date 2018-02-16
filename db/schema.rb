@@ -10,12 +10,34 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20180214164205) do
+ActiveRecord::Schema.define(version: 20180216212313) do
 
   create_table "messages", force: :cascade do |t|
     t.text "content"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+  end
+
+  create_table "trucks", force: :cascade do |t|
+    t.integer "serial_number"
+    t.string "address_formatted_address"
+    t.string "address_street_number"
+    t.string "address_street_name"
+    t.string "address_street"
+    t.string "address_city"
+    t.string "address_zip_code"
+    t.string "address_department"
+    t.string "address_department_code"
+    t.string "address_state"
+    t.string "address_state_code"
+    t.string "address_country"
+    t.string "address_country_code"
+    t.float "address_lat"
+    t.float "address_lng"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.float "latitude"
+    t.float "longitude"
   end
 
 end

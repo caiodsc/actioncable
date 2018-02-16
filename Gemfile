@@ -10,8 +10,12 @@ end
 gem 'rails', '~> 5.1.3'
 # A gem to automate using jQuery with Rails
 gem 'jquery-rails'
+# Postal addresses management in Ruby On Rails and Javascri
+gem 'jt-rails-address', '~> 1.0'
 # Use sqlite3 as the database for Active Record
 gem 'sqlite3'
+#Complete Ruby geocoding solution.
+gem 'geocoder'
 # Use Puma as the app server
 gem 'puma', '~> 3.7'
 # Use SCSS for stylesheets

@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :trucks
   root 'chats#show'
   mount ActionCable.server => '/cable'
 
